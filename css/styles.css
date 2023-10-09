@@ -62,19 +62,7 @@ a {
   }
 }
 
-.flexContainer {
-  width: 60em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.flexItem {
-  flex: 1;
-  background-color: antiquewhite;
-  min-height: 15em;
-}
-
-.flexItem:hover:nth-child(1n+4) {
+.items {
+  width: 50px;
   background-color: red;
 }
