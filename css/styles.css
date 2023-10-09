@@ -36,7 +36,6 @@ a {
 .btn {
   width: 6rem;
   border-radius: 4px;
-
 }
 
 .btn:hover {
@@ -50,6 +49,7 @@ a {
   max-width: 1440px;
   background-color: aqua;
   animation: colorize 10s infinite;
+  padding: 0.5em;
 }
 
 @keyframes colorize {
@@ -62,7 +62,72 @@ a {
   }
 }
 
-.items {
+.gridContainer {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.animationItem {
+  padding: 50px;
+  border: 1px solid black;
+  font-size: 18px;
+  text-align: center;
+  animation: animate infinite 5s;
+}
+
+@keyframes animate {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.transitionItem {
+  width: 250px;
+  height: 250px;
+  background: red;
+  color: none;
+  transition: width 5s;
+  text-align: center;
+}
+
+.transitionItem:hover {
   width: 50px;
-  background-color: red;
+  color: white;
+  text-align: center;
+  background: black;
+}
+
+.textContainer {
+  transition: 1s;
+}
+
+.textContainer:hover {
+  transform: rotate(180deg);
+}
+
+.copyPasta {
+  padding: 50px;
+  border: 1px solid black;
+  font-size: 18px;
+  text-align: center;
+  transition: 2s;
+}
+
+.copyPasta:hover {
+  transform: rotate(180deg);
 }
