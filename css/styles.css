@@ -47,11 +47,9 @@ a:visited {
 .btn {
   width: 6rem;
   border-radius: 8px;
+  padding: 16px;
   background-color: white;
-}
-
-.btn:hover {
-  color: white;
+  text-align: center;
 }
 
 /* MainCss */
@@ -128,7 +126,6 @@ a:visited {
   width: 250px;
   height: 250px;
   background: red;
-  color: none;
   transition: width 5s;
   text-align: center;
 }
