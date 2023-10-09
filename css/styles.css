@@ -13,10 +13,6 @@ body {
   background-color: white;
 }
 
-.topNav {
-  max-width: 1220px;
-}
-
 .homePage {
   max-width: 1024px;
   margin: 4em auto;
@@ -37,11 +33,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: black;
-  color: white;
-}
-
 .btn {
   width: 6rem;
   border-radius: 4px;
@@ -51,4 +42,39 @@ a:hover {
 .btn:hover {
   background-color: black;
   color: white;
+}
+
+/* MainCss */
+
+.mainContent {
+  max-width: 1440px;
+  background-color: aqua;
+  animation: colorize 10s infinite;
+}
+
+@keyframes colorize {
+  from {
+    background-color: aqua;
+  }
+
+  to {
+    background-color: aliceblue;
+  }
+}
+
+.flexContainer {
+  width: 60em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.flexItem {
+  flex: 1;
+  background-color: antiquewhite;
+  min-height: 15em;
+}
+
+.flexItem:hover:nth-child(1n+4) {
+  background-color: red;
 }
