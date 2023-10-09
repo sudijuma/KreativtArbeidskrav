@@ -1,3 +1,54 @@
-.header {
-  font-style: italic;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.topNav {
+  max-width: 1220px;
+}
+
+.homePage {
+  max-width: 1024px;
+  margin: 4em auto;
+}
+
+.heroBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/upload/vatten.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  width: 6rem;
+  border-radius: 4px;
+
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
 }
