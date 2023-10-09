@@ -20,7 +20,7 @@ body {
 
 .heroBanner {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-image: url(/upload/vatten.png);
   background-size: cover;
@@ -29,17 +29,28 @@ body {
   height: 40em;
 }
 
+.textContainerLandingPage {
+  width: 45ch;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
 a {
   text-decoration: none;
 }
 
+a:visited {
+  color: purple;
+}
+
 .btn {
   width: 6rem;
-  border-radius: 4px;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .btn:hover {
-  background-color: black;
   color: white;
 }
 
@@ -62,12 +73,25 @@ a {
   }
 }
 
+.h1Container {
+  width: 25em;
+  margin: 10em auto;
+}
+
+.welcomeBanner {
+  margin: 0 auto;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 250px 250px 250px;
   justify-content: center;
   gap: 16px;
   margin: 0 auto;
+}
+
+.solid {
+  border-top: 4px solid black;
 }
 
 .animationItem {
@@ -82,15 +106,19 @@ a {
   0% {
     background-color: red;
   }
+
   25% {
     background-color: yellow;
   }
+
   50% {
     background-color: blue;
   }
+
   75% {
     background-color: green;
   }
+
   100% {
     background-color: red;
   }
@@ -130,4 +158,13 @@ a {
 
 .copyPasta:hover {
   transform: rotate(180deg);
+}
+
+.headerContainer {
+  margin: 0 auto;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
